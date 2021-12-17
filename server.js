@@ -8,7 +8,7 @@ const typeDefs = loadSchemaSync("schema.graphql", {
 });
 
 const products = Array.from({ length: 10 }, (_, i) => ({
-  id: i + 1,
+  id: String(i + 1),
   name: faker.commerce.productName(),
   description: faker.commerce.productDescription(),
   price: faker.commerce.price(),
