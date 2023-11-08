@@ -6,6 +6,4 @@ type Query {
 type Product {
   id: ID!
   name: String!
-  description: String!
-  
 }
